@@ -142,6 +142,39 @@
         x.style.opacity = 0;
         y.style.opacity = 1;
     }
+<script>
+    // Function to handle login submission and validation
+    function login() {
+        // Get the username and password values from the login form
+        var username = document.querySelector("#login input[placeholder='Username or Email']").value;
+        var password = document.querySelector("#login input[placeholder='Password']").value;
+
+        // Basic validation: check if the fields are not empty
+        if (username === "" || password === "") {
+            alert("Please fill in both fields.");  // Show an alert if fields are empty
+        } else {
+            alert("Login successful (simulated). Redirecting to dashboard...");
+            window.location.href = "dashboard.html";  // Simulate successful login and redirect to dashboard
+        }
+    }
+
+    // Function to handle registration submission and validation
+    function register() {
+        // Get the form values for firstname, lastname, email, and password
+        var firstname = document.querySelector("#register input[placeholder='Firstname']").value;
+        var lastname = document.querySelector("#register input[placeholder='Lastname']").value;
+        var email = document.querySelector("#register input[placeholder='Email']").value;
+        var password = document.querySelector("#register input[placeholder='Password']").value;
+
+        // Basic validation: check if all fields are filled
+        if (firstname === "" || lastname === "" || email === "" || password === "") {
+            alert("Please fill in all fields.");  // Show an alert if any field is empty
+        } else {
+            alert("Registration successful (simulated). Redirecting to welcome page...");
+            window.location.href = "welcome.html";  // Simulate successful registration and redirect to welcome page
+        }
+    }
+</script>
 
 </script>
 
